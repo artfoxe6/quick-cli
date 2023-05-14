@@ -97,7 +97,7 @@ func setup(cmd *cobra.Command, args []string) {
 
 	// 修改当前目录的名称
 	newSuffix := strings.Split(name, "/")
-	oldSuffix := strings.Split(old, "/")
+	oldSuffix := strings.Split(currentDir, "/")
 	newDir := strings.ReplaceAll(currentDir, oldSuffix[len(oldSuffix)-1], newSuffix[len(newSuffix)-1])
 	err = os.Rename(currentDir, newDir)
 	if err != nil {
