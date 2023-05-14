@@ -1,0 +1,5 @@
+.idea
+build
+config/config.ini
+log
+bin
